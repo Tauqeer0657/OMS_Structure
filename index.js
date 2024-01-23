@@ -14,11 +14,7 @@ app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
 
 
-
-
-
-
-app.use('/api/empoyee', employeeDetails);
+app.use('/api/employee', employeeDetails);
 
 app.listen(port, () => {
   console.log(`Server is running on port ${port}`);

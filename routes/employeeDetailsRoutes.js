@@ -10,4 +10,7 @@ router.get('/', employeeController.getAllEmployees);
 // Add a new employee
 router.post('/', employeeController.addEmployee);
 
+// Update employee's data
+router.patch('/update/:EmployeeID', employeeController.updateEmployee);
+
 module.exports = router;
